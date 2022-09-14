@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Spice, type: :model do
-  let!(:spice) do 
+  let!(:spice) do
     Spice.create(
       title: "Allspice Berries, Whole (Jamaican)",
       image: "https://www.spicejungle.com/pub/media/catalog/product/cache/3db4d5004662ba3673dd7a19a8603593/w/h/whole-allspice-berries.jpg",
@@ -22,7 +22,7 @@ RSpec.describe Spice, type: :model do
       expect(spice.title).to eq('Allspice Berries, Whole (Jamaican)')
     end
   end
-  
+
   describe '#image' do
     it 'returns the spice\'s image' do
       expect(spice.image).to eq('https://www.spicejungle.com/pub/media/catalog/product/cache/3db4d5004662ba3673dd7a19a8603593/w/h/whole-allspice-berries.jpg')
